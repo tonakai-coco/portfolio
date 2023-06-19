@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <Container>
       <Box borderRadius="lg" bg="lightblue" p={3} mb={5} align="center">
-        Hello, I'm an embedded software developer based in Tochigi!
+        Hello, I&apos;m an embedded software developer based in Tochigi!
       </Box>
 
       <Box display={{ md: 'flex' }}>
