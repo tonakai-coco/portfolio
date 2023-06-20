@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import Logo from '../logo'
 import {
   Container,
   Box,
@@ -54,14 +55,8 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Image
-            boxSize="48px"
-            objectFit="cover"
-            src="/logo_light.png"
-            alt="LOGO light mode"
-          />
           <Heading as="h1" size="lg" letterSpacing={'tighter'} p={2}>
-            Yoshinori Kashimura
+            <Logo />
           </Heading>
         </Flex>
       </Container>
