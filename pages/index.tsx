@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Text } from '@chakra-ui/react'
 
 const Page = () => {
   return (
@@ -12,7 +12,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Yoshinori Kashimura
           </Heading>
-          <p>Software Developer</p>
+          <Text>Software Developer</Text>
         </Box>
       </Box>
     </Container>

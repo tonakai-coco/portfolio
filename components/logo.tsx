@@ -16,7 +16,7 @@ const LogoBox = styled.span`
   }
 `
 const Logo = () => {
-  const logoImg = `/logo_${useColorModeValue('light', 'dark')}.png`
+  const logoImg = `/logo_mark${useColorModeValue('', '-dark')}.png`
   return (
     <Link href="/">
       <LogoBox>
