@@ -1,8 +1,14 @@
 import Head from 'next/head'
 import Navbar from './navbar'
 import { Box, Container } from '@chakra-ui/react'
+import { NextRouter } from 'next/router'
 
-const Main = ({ children, router }) => {
+interface MainProps {
+  children: React.ReactNode
+  router: NextRouter
+}
+
+const Main = ({ children, router }: MainProps) => {
   return (
     <Box as="main" pb={8}>
       <Head>

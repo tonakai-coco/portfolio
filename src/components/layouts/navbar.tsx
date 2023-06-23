@@ -16,7 +16,12 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-const LinkItem = ({ href, path, children }) => {
+interface LinkItemProps {
+  href: string
+  path: string
+  children: React.ReactNode
+}
+const LinkItem = ({ href, path, children }: LinkItemProps) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
@@ -32,7 +37,11 @@ const LinkItem = ({ href, path, children }) => {
   )
 }
 
-const Navbar = props => {
+interface NavbarProps {
+  path: string
+}
+
+const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
   const { path } = props
 
   return (
