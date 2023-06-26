@@ -1,3 +1,4 @@
+import Section from '@/components/layouts/section'
 import {
   Container,
   Box,
@@ -54,6 +55,12 @@ const Page = () => {
           <Image src="/tonakai_band_equipment.jpeg" alt="tonakai equipment" />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   )
 }
