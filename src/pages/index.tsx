@@ -5,8 +5,12 @@ import {
   Heading,
   Text,
   Image,
-  useColorModeValue
+  useColorModeValue,
+  Button
 } from '@chakra-ui/react'
+import Paragraph from '@/components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -59,7 +63,14 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>Paragraph</Paragraph>
+        <Box align="center" my={4}>
+          <Link href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </Link>
+        </Box>
       </Section>
     </Container>
   )
