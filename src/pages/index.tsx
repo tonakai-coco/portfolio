@@ -11,6 +11,7 @@ import {
 import Paragraph from '@/components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
+import { BioSection, BioYear } from '@/components/bio'
 
 const Page = () => {
   return (
@@ -46,7 +47,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Yoshinori Kashimura
           </Heading>
-          <Text>Software Developer</Text>
+          <Text>Software Developer / Bassist / DTMer</Text>
         </Box>
       </Box>
       <Box display={{ md: 'flex' }}>
@@ -71,6 +72,23 @@ const Page = () => {
             </Button>
           </Link>
         </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1989</BioYear>
+          茨城県古河市出身
+        </BioSection>
+        <BioSection>
+          <BioYear>2013</BioYear>
+          宇都宮大学大学院工学研究科博士前期課程情報システム科学専攻修了
+        </BioSection>
+        <BioSection>
+          <BioYear>2013</BioYear>
+          ハートランド・データ株式会社入社
+        </BioSection>
       </Section>
     </Container>
   )
