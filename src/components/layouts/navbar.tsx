@@ -59,9 +59,9 @@ const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        flexWrap="wrap"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'} p={2}>
@@ -84,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Flex align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
               </MenuList>
             </Menu>
           </Box>
-        </Box>
+        </Flex>
       </Container>
     </Box>
   )
