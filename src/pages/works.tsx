@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '@/components/layouts/section'
 import { WorkGridItem } from './grid-item'
 import thumbBand from '../../public/tonakai_band_equipment.jpeg'
