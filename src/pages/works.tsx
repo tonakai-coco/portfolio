@@ -11,8 +11,18 @@ const Works = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="band" title="Band" thumbnail={thumbBand}>
-            Band
+          <WorkGridItem id="band1-1" title="Band1-2" thumbnail={thumbBand}>
+            Band1-3
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="band2-1" title="Band2-2" thumbnail={thumbBand}>
+            Band2-3
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="band3-1" title="Band3-2" thumbnail={thumbBand}>
+            Band3-3
           </WorkGridItem>
         </Section>
       </SimpleGrid>
